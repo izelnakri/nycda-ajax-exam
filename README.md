@@ -117,18 +117,16 @@ A - F - B - C - E - D
 
 - 2c. Describe the events that happen between each letter. When does the server get hit?
 
-1- browser prints 'A'.
-2 - Then it puts a click listener on '#map' with a callback function.
-3 - browser prints 'F'.
-======
+- browser prints 'A'.
+- Then it puts a click listener on '#map' with a callback function.
+- browser prints 'F'.
 When a user clicks on the '#map':
-======
-4 - Browser prints 'B', then:
-5 - convertMouseCoordinatesToGeoCoordinates function runs and returned value is saved to coordinates variable
-6 - browser prints 'C'
-7 - Browser makes an AJAX get request to /map with latitudes and longitudes passed in as query parameters
-8 - browser prints 'E'
-9 - When AJAX get request to /map finishes, browser prints 'D' and it updates the mapDisplay with response
+- Browser prints 'B', then:
+- convertMouseCoordinatesToGeoCoordinates function runs and returned value is saved to coordinates variable
+- browser prints 'C'
+- Browser makes an AJAX get request to /map with latitudes and longitudes passed in as query parameters
+- browser prints 'E'
+- When AJAX get request to /map finishes, browser prints 'D' and it updates the mapDisplay with response
 
 ---
 

@@ -167,7 +167,7 @@ html
 
 - 3a. Is `x` executed server side or client side? Does the client ever see `x`?
 
-x will get executed on the client side. Client will see x since it is inside a ```<script>``` tag and runs in inside the browser.
+x will get executed on the client side. Client will see x since it is inside a ```<script>``` tag and runs it inside the browser.
 
 - 3b. Is `y` executed server side or client side? Does the client ever see `y`?
 
@@ -194,12 +194,12 @@ app.get('/home', function (request, response) {
 
 - 5a. List the complete order of events, starting from the browser making a `GET` request to `/home`. Assume that `index` refers to the Jade file in Part 4. Be sure to describe when each JavaScript statement (`x`, `y`, `z`, and `boop.js`) gets executed.
 
-The code above tells our express server to listen to GET /home requests. During that request our callback code will run. Our server will try to render the index.pug template and will pass 3 as 'z' to the pug template before rendering. After that server will send the html string that gets returned from the render() function to the client and HTTP Response body.
+The code above tells our express server to listen to GET /home requests. During that request our callback code will run. Our server will try to render the index.pug template and will pass 3 as 'z' to the pug template before rendering. After that server will send the html string that gets returned from the render() function to the client as HTTP Response body.
 
 - 5b. What is displayed on the page?
 
-It will be a second header styled '5'
+It will be '5' with second header styling.
 
 - 5c. What is visible from 'view page source'?
 
-The HTTP Response body of the request. In other words the actual response of the server. This is what browser sees when the request finishes.
+The HTTP Response body of the request. In other words the actual response of the server, result html. This is what browser sees when the request finishes.

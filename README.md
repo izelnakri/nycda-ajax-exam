@@ -167,7 +167,7 @@ html
 
 - 3a. Is `x` executed server side or client side? Does the client ever see `x`?
 
-x will get executed on the client side. Client will see x since it is inside a <script> tag and runs in inside the browser.
+x will get executed on the client side. Client will see x since it is inside a ```<script>``` tag and runs in inside the browser.
 
 - 3b. Is `y` executed server side or client side? Does the client ever see `y`?
 
